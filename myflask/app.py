@@ -2,9 +2,14 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from flask import session
 import time
 
 app = Flask(__name__)
+# sessoin xuyao
+app.config['SECRET_KEY'] = "123456"
+#or
+app.secret_key = "123456"
 
 def timer(func=None,param=None):
     print "111111111111111111111111:",func,param
@@ -14,7 +19,7 @@ def timer(func=None,param=None):
             res = func(*args, **kwargs)
             endTime = time.time()
             print "22222222222222222222222:", func, param
-            print func, "执行时间：", (endTime - startTime)
+            print func, "执行时间：[", (endTime - startTime),"]"
             return res
 
         print "---------------------------",deco.__name__ ,func.__name__
@@ -60,6 +65,21 @@ def mhome():
         'age' : 18
     }
     return render_template("html/home.html",**context)
+    # 使用url_for可以实现视图方法之间的内部跳转   ========  url_for("视图方法名")
+    #return redirect(url_for("index"))
+
+@app.route('/set_session')
+@timer(func=None,param="setSession")
+def set_session():
+    print "SetSession"
+    session["username"] = "xiaoming"
+    return 'ok!'
+
+@app.route('/get_session')
+@timer(func=None,param="getSession")
+def get_session():
+    print "getSession"
+    return session.get("username")
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8899, debug=True)
