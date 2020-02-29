@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="af73c427-e8c5-466f-8bd0-015071f7893a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Stub" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XqbnlGXWvV48U59Zni9Z82lPrT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af73c427-e8c5-466f-8bd0-015071f7893a" name="Default Changelist" comment="" />
+      <created>1581776742232</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581776742232</updated>
+      <workItem from="1581776749287" duration="1600000" />
+      <workItem from="1581778750603" duration="775000" />
+      <workItem from="1581780428882" duration="147000" />
+      <workItem from="1581780609156" duration="1238000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="369" y="28" width="618" height="706" key="#Main" timestamp="1581781703064">
+      <screen x="0" y="28" width="1366" height="706" />
+    </state>
+    <state x="369" y="28" width="618" height="706" key="#Main/0.28.1366.706/1366.0.1024.768@0.28.1366.706" timestamp="1581781703064" />
+    <state x="141" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581781515084">
+      <screen x="0" y="28" width="1366" height="706" />
+    </state>
+    <state x="141" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1366.706/1366.0.1024.768@0.28.1366.706" timestamp="1581781515084" />
+    <state x="461" y="89" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1581781679410">
+      <screen x="0" y="28" width="1366" height="706" />
+    </state>
+    <state x="461" y="89" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog/0.28.1366.706/1366.0.1024.768@0.28.1366.706" timestamp="1581781679410" />
+    <state x="179" y="28" width="997" height="706" key="SettingsEditor" timestamp="1581781644625">
+      <screen x="0" y="28" width="1366" height="706" />
+    </state>
+    <state x="179" y="28" width="997" height="706" key="SettingsEditor/0.28.1366.706/1366.0.1024.768@0.28.1366.706" timestamp="1581781644625" />
+    <state x="339" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1581780609592">
+      <screen x="0" y="28" width="1366" height="706" />
+    </state>
+    <state x="339" y="208" key="com.intellij.ide.util.TipDialog/0.28.1366.706/1366.0.1024.768@0.28.1366.706" timestamp="1581780609592" />
+  </component>
+</project>
