@@ -4,12 +4,22 @@ from flask import render_template
 from flask import request
 from flask import session
 import time
+import psutil
+
 
 app = Flask(__name__)
 # sessoin xuyao
 app.config['SECRET_KEY'] = "123456"
 #or
 app.secret_key = "123456"
+#热更新
+app.jinja_env.auto_reload = True
+app.config['TEMPLATES_AUTO_RELOAD'] = True
+
+app.config.update({
+    'DEBUG':True,
+    'PORT':8899
+})
 
 def timer(func=None,param=None):
     print "111111111111111111111111:",func,param
@@ -19,7 +29,7 @@ def timer(func=None,param=None):
             res = func(*args, **kwargs)
             endTime = time.time()
             print "22222222222222222222222:", func, param
-            print func, "执行时间：[", (endTime - startTime),"]"
+            print func, "执行时间：【", (endTime - startTime),"】"
             return res
 
         print "---------------------------",deco.__name__ ,func.__name__
@@ -43,7 +53,23 @@ def timer(func):
 @timer(func=None,param="helloworld")
 def hello_world():
     # return 'Hello World!'
-    return render_template("html/home.html")
+    dictRes = dict()
+    for i in psutil.disk_partitions():
+        print i[0], i[1], psutil.disk_usage(i[1])[3]
+        dictRes[i[0]] = psutil.disk_usage(i[1])[3]
+
+    context = {
+        "getlogin"  : psutil.os.getlogin(),
+        "ctermid"   : psutil.os.ctermid(),
+        "cpu_count" : psutil.cpu_count(),
+        "cpu_percent" : psutil.cpu_percent(),
+        "cpu_stats" : psutil.cpu_stats(),
+        "swap_memory" : psutil.swap_memory(),
+        #"net_connections" : psutil.net_connections()
+        "diskinfo"  : dictRes,
+        "net_connections": ""
+    }
+    return render_template("html/index.html",**context)
 
 
 @app.route('/req')
@@ -83,3 +109,4 @@ def get_session():
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8899, debug=True)
+

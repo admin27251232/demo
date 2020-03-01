@@ -3,8 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>标题</title>
+    <style>
+        dl {
+            margin-bottom:50px;
+        }
+
+        dl dt {
+            background:#5f9be3;
+            color:#fff;
+            float:left;
+            font-weight:bold;
+            margin-right:10px;
+            padding:5px;
+            width:50%;
+        }
+
+        dl dd {
+            background: #4cff71;
+            color:#fff;
+            margin:2px 0;
+            padding:5px 0;
+        }
+    </style>
 </head>
 <body>
-    这里是首页！
+    Index
+    <p>os.getlogin =  {{ getlogin }}</p>
+    <p>os.ctermid  =  {{ ctermid }}</p>
+    <p>cpu_count   =  {{ cpu_count }}</p>
+    <p>cpu_percent =  {{ cpu_percent }}</p>
+    <p>cpu_stats   =  {{ cpu_stats }}</p>
+    <p>swap_memory =  {{ swap_memory }}</p>
+    <p>diskinfo =  {{ diskinfo }}</p>
+
+    <dl>
+    {% for key, value in diskinfo.iteritems() %}
+    <dt>
+        {{ key }}
+    </dt>
+        {% if value > 20%}
+        <dd style="background-color: red">
+            使用率：【{{ value}}%】
+        </dd>
+        {% else %}
+        <dd>
+            使用率：【{{ value}}%】
+        </dd>
+        {% endif %}
+    {% endfor %}
+    </dl>
+
+    <!--<p>net_connections = : {{ net_connections }}</p>-->
 </body>
 </html>
