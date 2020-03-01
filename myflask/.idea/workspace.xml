@@ -183,10 +183,11 @@
       <screen x="0" y="28" width="1366" height="706" />
     </state>
     <state width="1316" height="187" key="GridCell.Tab.1.right/0.28.1366.706/1366.0.1024.768@0.28.1366.706" timestamp="1582992221856" />
-    <state x="339" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1582898821024">
+    <state x="339" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1583067658497">
       <screen x="0" y="28" width="1366" height="706" />
     </state>
     <state x="339" y="208" key="com.intellij.ide.util.TipDialog/0.28.1366.706/1366.0.1024.768@0.28.1366.706" timestamp="1582898821024" />
+    <state x="339" y="208" key="com.intellij.ide.util.TipDialog/0.28.1366.706@0.28.1366.706" timestamp="1583067658497" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/myflask$app.coverage" NAME="app Coverage Results" MODIFIED="1582898841693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
