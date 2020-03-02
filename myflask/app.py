@@ -5,7 +5,9 @@ from flask import request
 from flask import session
 import time
 import psutil
+import logging
 
+import DBConfig
 
 app = Flask(__name__)
 # sessoin xuyao
@@ -20,6 +22,9 @@ app.config.update({
     'DEBUG':True,
     'PORT':8899
 })
+
+app.config.from_object(DBConfig)
+db = SQLAlchemy(app)
 
 def timer(func=None,param=None):
     print "111111111111111111111111:",func,param
